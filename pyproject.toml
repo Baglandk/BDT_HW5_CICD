@@ -5,7 +5,9 @@ description = "Homework for CICD"
 authors = [
     {name = "Baglan", email = "www.baglan888@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+    "ruff>=0.7.0",
+]
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
@@ -17,3 +19,7 @@ build-backend = "pdm.backend"
 
 [tool.pdm]
 distribution = true
+
+[tool.ruff]
+show-fixes = true
+line-length = 120
